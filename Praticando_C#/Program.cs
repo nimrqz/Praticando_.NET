@@ -99,3 +99,36 @@ void exercicio5()
         Console.WriteLine("Classificação: Idoso");
     }
 }
+
+void exercicio6()
+{
+    Console.Write("Digite o primeiro número: ");
+    double numero1 = double.Parse(Console.ReadLine());
+
+    Console.Write("Digite o segundo número: ");
+    double numero2 = double.Parse(Console.ReadLine());
+
+    Console.Write("Digite a operação (+, -, *, /): ");
+    char operacao = char.Parse(Console.ReadLine());
+
+    switch (operacao)
+    {
+        case '+':
+            Console.WriteLine($"Resultado: {numero1 + numero2}");
+            break;
+        case '-':
+            Console.WriteLine($"Resultado: {numero1 - numero2}");
+            break;
+        case '*':
+            Console.WriteLine($"Resultado: {numero1 * numero2}");
+            break;
+        case '/':
+            Console.WriteLine($"Resultado: {numero1 / numero2}");
+            break;
+        default:
+            Console.WriteLine("Operação inválida.");
+            break;
+    }
+}
+
+exercicio6();
